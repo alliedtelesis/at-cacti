@@ -47,4 +47,10 @@ Apache 2.0
 Sample Graphs
 #############
 
+.. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x210%20overview.png
 
+.. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20fan%20with%20threshold.png
+
+.. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20overview.png
+
+.. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20temperature%20with%20threshold.png
