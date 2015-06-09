@@ -32,7 +32,7 @@ Install
 
 .. note::
 
-    Tested on Cacti version 0.8.8c
+    Tested on Cacti version 0.8.8b
 
 - Enable SNMP on the device you want to monitor
 
