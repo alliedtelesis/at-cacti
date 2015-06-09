@@ -1,0 +1,59 @@
+<interface>
+	<name>Get Allied Telesis Envmon v2 - Temperature</name>
+	<description>Queries an AT AW+ device for reporting temperature sensors.</description>
+	<oid_index>.1.3.6.1.4.1.207.8.4.4.3.12.3.1</oid_index>
+        <oid_index_parse>OID/REGEXP:^enterprises\.207\.8\.4\.4\.3\.12\.3\.1\.[0-9]{1}\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})</oid_index_parse>
+        <index_order>vsIndex</index_order>
+	<index_order_type>alphabetic</index_order_type>
+        <index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<vsIndex>
+                        <name>Index</name>
+                        <source>index</source>
+                        <direction>input</direction>
+		</vsIndex>
+                <temperatureStackMemberId>
+                        <name>Stack ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.1</oid>
+                </temperatureStackMemberId>
+                <temperatureBoardId>
+                        <name>Board ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.2</oid>
+                </temperatureBoardId>
+                <temperatureId>
+                        <name>ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.3</oid>
+                </temperatureId>
+                <temperatureDescription>
+                        <name>Description</name>
+                        <source>VALUE/REGEXP:^Temp: (.*)$</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.4</oid>
+                </temperatureDescription>
+                <temperatureCurrent>
+                        <name>Current Temperature</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.5</oid>
+                </temperatureCurrent>
+                <temperatureUpperThreshold>
+                        <name>Upper Threshold</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.3.1.6</oid>
+                </temperatureUpperThreshold>
+	</fields>
+</interface>

@@ -1,0 +1,58 @@
+<interface>
+	<name>Get Allied Telesis Envmon v2 - Fan</name>
+	<description>Queries an AT AW+ device for reporting fan status.</description>
+	<oid_index>.1.3.6.1.4.1.207.8.4.4.3.12.1.1</oid_index>
+        <oid_index_parse>OID/REGEXP:^enterprises\.207\.8\.4\.4\.3\.12\.1\.1\.[0-9]{1}\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})</oid_index_parse>
+        <index_order>vsIndex</index_order>
+	<index_order_type>alphabetic</index_order_type>
+
+	<fields>
+		<vsIndex>
+                        <name>Index</name>
+                        <source>index</source>
+                        <direction>input</direction>
+		</vsIndex>
+                <fanStackMemberId>
+                        <name>Stack ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.1</oid>
+                </fanStackMemberId>
+                <fanBoardId>
+                        <name>Board ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.2</oid>
+                </fanBoardId>
+                <fanId>
+                        <name>ID</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.3</oid>
+                </fanId>
+                <fanDescription>
+                        <name>Description</name>
+                        <source>VALUE/REGEXP:^Fan: (.*)$</source>
+                        <method>walk</method>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.4</oid>
+                </fanDescription>
+                <fanCurrent>
+                        <name>Current Speed</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.5</oid>
+                </fanCurrent>
+                <fanLowerThreshold>
+                        <name>Lower Threshold</name>
+                        <source>value</source>
+                        <method>walk</method>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.207.8.4.4.3.12.1.1.6</oid>
+                </fanLowerThreshold>
+	</fields>
+</interface>
