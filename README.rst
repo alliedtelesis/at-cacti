@@ -6,7 +6,7 @@ About
 
 Cacti_ is a complete network graphing solution designed to harness the power of RRDTool_'s data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.
 
-AT-CACTI is a project which includes templates for adding support to Cacti for Allied Telesis devices.
+AT-CACTI is a project which provides templates for adding support to Cacti for Allied Telesis devices.
 
 .. _Cacti: http://www.cacti.net/
 
