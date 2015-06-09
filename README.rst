@@ -2,7 +2,7 @@ AT-CACTI
 ########
 
 About
-#####
+-----
 
 Cacti_ is a complete network graphing solution designed to harness the power of RRDTool_'s data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.
 
@@ -13,7 +13,7 @@ AT-CACTI is a project which provides templates for adding support to Cacti for A
 .. _RRDTool: http://oss.oetiker.ch/rrdtool/
 
 Supported Devices
-#################
+-----------------
 
 - Alliedware plus based devices (x210, x510, x600 and etc)
 
@@ -28,7 +28,11 @@ Supported Devices
 - ATS based devices (8000S) - Under Developemnt
 
 Install
-#######
+-------
+
+.. note::
+
+    Tested on Cacti version 0.8.8c
 
 - Enable SNMP on the device you want to monitor
 
@@ -40,12 +44,12 @@ Install
 
 
 License
-#######
+-------
 
 Apache 2.0
 
 Sample Graphs
-#############
+-------------
 
 Overview on x210 switch
 
