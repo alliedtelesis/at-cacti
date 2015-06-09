@@ -47,10 +47,18 @@ Apache 2.0
 Sample Graphs
 #############
 
+Overview on x210 switch
+
 .. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x210%20overview.png
+
+Fan speed with alarm threshold
 
 .. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20fan%20with%20threshold.png
 
+Overview on x600 switch
+
 .. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20overview.png
+
+Temperature ambient sensor of an x600 with alarm threshold
 
 .. image:: https://github.com/alliedtelesis/at-cacti/blob/master/sample_graphs/x600%20temperature%20with%20threshold.png
