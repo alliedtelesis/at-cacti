@@ -25,7 +25,9 @@ Supported Devices
 
    - Temperatures
 
-- ATS based devices (8000S) - Under Developemnt
+- 8000S swiches
+
+   - CPU Usage
 
 Install
 #######
